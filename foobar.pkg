@@ -1,0 +1,17 @@
+v 3
+
+d foobar. Demo Mata package
+d
+d Author, Affiliation (email@example.com)
+d
+d description here
+d
+d KW: mata
+d KW: mlib
+d
+d Requires: Stata version 11.2
+d
+d Distribution-Date: 20170620
+
+f foobar.ado
+f foobar.mata

@@ -1,0 +1,3 @@
+v 3
+d Author, Affiliation (email@example.com)
+p foobar FOOBAR - Demo Mata package
