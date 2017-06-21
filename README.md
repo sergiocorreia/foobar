@@ -11,7 +11,7 @@ and should just include the Mata code at the end of the do-file.
 
 - Ado files usually start with a version line: `*! foobar 0.0.3 20jun2017`.
 - Within the Stata program, we run `ms_get_version` (part of `ftools`), which reads this line and stores it in a local.
-- Next, we run `ms_compile_mata, package(foobar) version(`package_version')`
+- Next, we run ``ms_compile_mata, package(foobar) version(`package_version')``
 - This will try to run the Mata functions `foobar_version()` and `foobar_stata_version()`. If they are not found or return different values, it wil then run `do foobar.mata` and create a `lfoobar.mlib` file.
 - The key trick is that the `.mata` file also runs `ms_get_version` and has functions that depend on the locals created. So if the version of Stata or of the package differ than the ones used to compile the `mlib`, the library will be created again.
 
